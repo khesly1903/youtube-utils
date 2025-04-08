@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Hız Butonları",
+    "version": "1.0",
+    "description": "YouTube üzerinde transparan hız kontrol butonları ekler.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "icons": {
+      "128": "icons/speedometer.png"
+    }
+  }
+  
